@@ -1,10 +1,26 @@
 @charset "ISO-8859-1";
 
 body{
-	background-color: black;
+	background-color: red;
 	color : yellow;
 }
 
 a {
-	color : yellow;
+	color : black;
 }
+
+.se_connecter{
+	background-color:blue;
+	color:white;
+	border-radius:50%;
+	width:85px;
+	height:85px;
+}
+.navk{
+	background-color:white;
+	float:left;
+}
+.nav{
+	
+	display:none;
+} 

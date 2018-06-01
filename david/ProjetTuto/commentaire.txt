@@ -1,0 +1,10 @@
+Le projet a été déplacé dans le dossier :
+
+C:\Users\Formation.M2I-JAV5-04\Documents\GitHub\ProjetTuto
+
+dans lequel on a un dossier .git invisible qui permet le téléchargement de notre projet sur Github
+
+https://www.gitkraken.com/
+
+logiciel avec lequel on crée trois branches
+
