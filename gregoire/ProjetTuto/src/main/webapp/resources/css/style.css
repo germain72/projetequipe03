@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+
+body{
+	background-color: red;
+	color : yellow;
+}
+
+a {
+	color : yellow;
+}
+
+.se_connecter{
+	background-color:blue;
+	color:white;
+	border-radius:50%;
+	width:85px;
+	height:85px;
+}
