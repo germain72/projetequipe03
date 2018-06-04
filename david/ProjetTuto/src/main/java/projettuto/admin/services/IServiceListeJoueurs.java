@@ -8,6 +8,8 @@ public interface IServiceListeJoueurs {
 	
 	List<Joueur> rechercherJoueurs();
 	
-	void creerJoueur(final Integer idJoueur, final String nomJoueur);
+	void ajouterJoueur(Joueur joueur);
+	
+	void suppJoueur(int idJoueur);
 
 }

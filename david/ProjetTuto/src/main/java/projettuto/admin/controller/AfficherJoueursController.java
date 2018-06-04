@@ -18,10 +18,10 @@ public class AfficherJoueursController {
 	@Autowired    
 	private IServiceListeJoueurs service;
 	 
-	 @RequestMapping(method = RequestMethod.GET)    
-	 public String afficher(ModelMap pModel) {        
-		 final List<Joueur> lListeJoueurs = service.rechercherJoueurs();        
-		 pModel.addAttribute("listeJoueurs", lListeJoueurs);        
+	 @RequestMapping(method = RequestMethod.GET)
+	 public String afficher(ModelMap pModel) {
+		 final List<Joueur> lListeJoueurs = service.rechercherJoueurs();
+		 pModel.addAttribute("listeJoueurs", lListeJoueurs);
 		 return "listeJoueurs";
 	 } 
 }

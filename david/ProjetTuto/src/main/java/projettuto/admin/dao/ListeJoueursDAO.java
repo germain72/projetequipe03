@@ -29,8 +29,15 @@ public class ListeJoueursDAO implements IListeJoueursDAO {
 		return lTypedQuery.getResultList();
 	}
 	
-	public void creerJoueur(final Joueur pJoueur) {
-		entityManager.persist(pJoueur);
+	public void ajouterJoueur(final Joueur pJoueur) {
+		 entityManager.persist(pJoueur);
 	}
-
+	
+	// p pour paramètre, l pour local
+	public void suppJoueur(int idJoueur) {
+		// final Joueur lJoueur = entityManager.getReference(Joueur.class, pJoueur.getIdJoueur());
+		final Joueur lJoueur = entityManager.getReference(Joueur.class, idJoueur);
+		entityManager.remove(lJoueur);
+	}
+	
 }

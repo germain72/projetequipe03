@@ -21,14 +21,14 @@ public class ServiceListeJoueurs implements IServiceListeJoueurs {
 	}
 
 	@Transactional
-	public void creerJoueur(final Integer idJoueur, final String nomJoueur) {
-		final Joueur notreJoueur = new Joueur();
-		// notreJoueur.setIdJoueur(idJoueur);
-		notreJoueur.setNom("David NEW");
-
-		dao.creerJoueur(notreJoueur);
+	public void ajouterJoueur(final Joueur notreJoueur) {
+		dao.ajouterJoueur(notreJoueur);
 	}
 	
+	@Transactional
+	public void suppJoueur(int idJoueur) {
+		dao.suppJoueur(idJoueur);
+	}
 	
 	
 }

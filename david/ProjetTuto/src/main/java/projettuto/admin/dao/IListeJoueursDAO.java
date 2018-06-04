@@ -8,8 +8,8 @@ public interface IListeJoueursDAO {
 
 	List<Joueur> rechercherJoueurs();
 	
-	void creerJoueur(final Joueur pJoueur);
+	void ajouterJoueur(final Joueur pJoueur);
 	
-	void creerJoueur(final Integer idJoueur, final String nomJoueur);
+	void suppJoueur(int idJoueur);
 	
 }

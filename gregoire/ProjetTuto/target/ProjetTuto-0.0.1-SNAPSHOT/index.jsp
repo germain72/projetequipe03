@@ -12,7 +12,7 @@
 		<link href="<c:url value="/css/bootstrap-3.3.7-dist/css/bootstrap.min.css" />" rel="stylesheet">
         <link href="<c:url value="/css/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" />" rel="stylesheet">
         
-        <script src="<c:url value="/css/bootstrap-3.3.7-dist/js/jquery-3.3.1.js" />"></script>
+        <script src="<c:url value="/css/bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/css/bootstrap-3.3.7-dist/js/bootstrap.min.js"/>">
 		</script>
 		
@@ -36,36 +36,43 @@
   </ul>
 </nav>
     -->
-    <nav class="navbar navbar-light light-blue lighten-4">
-
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="#">Navbar</a>
-
-    <!-- Collapse button -->
-    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
-        aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i class="fa fa-bars fa-1x"></i></span></button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-        </ul>
-        <!-- Links -->
-
+ <!--  
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="about.php">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="contact.php">Contact</a></li>
+    </ul>
+  </div>
+</nav>  
+ -->   
+ 
+ <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
     </div>
-    <!-- Collapsible content -->
 
-</nav>    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Regle</a></li>
+        <li><a href="#">Jeux</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+   <div class="container"> 
 		<img src="<c:url value="/images/bi.jpg" />" />
 		
 		<input type="submit" value="se connecter" class="se_connecter">
@@ -84,9 +91,8 @@
 		  
 		<c:url value="/view/showMessage.jsp" var="messageUrl" />
 		<a href="${messageUrl}"></a>
-		<br><br>Un petit message
-		
-		
+		<br/><br/>Un petit message
+	</div>  	
 
 		
 		

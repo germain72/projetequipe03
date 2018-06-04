@@ -27,7 +27,7 @@
 		  
 		
 		<c:url value="/joueurs" var="messageUrl" />
-		<a href="${messageUrl}">Click to enter</a>
+		<a href="${messageUrl}">Voir les noms de mes joueurs</a>
 		<br><br>Un petit message
 		
 		<br><br>
