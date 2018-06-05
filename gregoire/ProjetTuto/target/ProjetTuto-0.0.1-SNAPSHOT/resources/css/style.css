@@ -9,12 +9,13 @@ a {
 	color : black;
 }
 
-.se_connecter{
-	background-color:blue;
+.btnlogin {
+	background-color:black;
 	color:white;
 	border-radius:50%;
 	width:85px;
 	height:85px;
+	background-image: linear-gradient(to bottom,#fff 0,#000000 100%);
 }
 /*
 .navk{
@@ -40,7 +41,7 @@ navbar,
 }
 
 .navbar-inverse .navbar-nav>li>a {
-  color: #ffffff;
+  color: red;
   font-family: Lato;
   font-size: 1.7em;
   font-weight: 300;
@@ -48,7 +49,7 @@ navbar,
 }
 
 .navbar-inverse .navbar-nav li a:hover {
-  background-color: #444444;
+  background-color: black;
   transition: 0.7s all linear;
   height: 100%;
 }

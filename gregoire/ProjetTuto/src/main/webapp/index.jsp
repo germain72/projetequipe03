@@ -57,64 +57,51 @@
   </div>
 </nav>  
  -->
-	<div class="container">
+	
+			<div class="container">
 		<div class="row">
-			<div class="col-lg-8">
+			<div class="col-xs-8">
 				<img src="<c:url value="/images/bi.jpg" />" />
-
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4">
-
-							<nav class="navbar navbar-inverse navbar-static-top"
-								role="navigation">
-								<div class="container">
-									<div class="navbar-header">
-										<button type="button" class="navbar-toggle collapsed"
-											data-toggle="collapse"
-											data-target="#bs-example-navbar-collapse-1">
-											<span class="sr-only">Toggle navigation</span> <span
-												class="icon-bar"></span> <span class="icon-bar"></span> <span
-												class="icon-bar"></span>
-										</button>
-									</div>
-								</div>
-
-								<!-- Collect the nav links, forms, and other content for toggling -->
-								<div class="collapse navbar-collapse"
-									id="bs-example-navbar-collapse-1">
-									<ul class="nav navbar-nav">
-										<li><a href="#">Accueil</a></li>
-										<li><a href="#">Regle</a></li>
-										<li><a href="#">Jeux</a></li>
-									</ul>
-								</div>
+					</div>
+			
+							<div class="container">
+						<div class="row">
+						<div class="col-xs-4 col-md-4">
+						<nav class="navbar navbar-inverse navbar-static-top"
+					role="navigation">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed"
+								data-toggle="collapse"
+								data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span> <span
+									class="icon-bar"></span> <span class="icon-bar"></span> <span
+									class="icon-bar"></span>
+							</button>
 						</div>
 					</div>
-				</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse"
+						id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li><a href="#">Accueil</a></li>
+							<li><a href="#">Regle</a></li>
+							<li><a href="#">Jeux</a></li>
+						</ul>
 			</div>
 		</div>
 	</div>
-	</nav>
-
-
-
-
-
-	<button class="btn btn-default btnlogin" type="submit">login</button>
-
-
-
-
-
-	<c:url value="/view/showMessage.jsp" var="messageUrl" />
-	<a href="${messageUrl}"></a>
-	<br />
-	<br />Un petit message
 	</div>
+	</div>
+	</div>
+	</div>
+				
+				</nav>
 
+				<button class="btn btn-default btnlogin" type="submit">login</button>
 
-
-
+				<c:url value="/view/showMessage.jsp" var="messageUrl" />
+				<a href="${messageUrl}"></a> <br /> <br />Un petit message
+			</div>
 </body>
 </html>
