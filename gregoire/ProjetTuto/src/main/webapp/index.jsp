@@ -89,7 +89,7 @@
 	</div>
 	<div class="row">
 			<div class="col-xs-8">
-				<img src="<c:url value="/images/bi.jpg" />" />
+				<!-- <img src="<c:url value="/images/bi.jpg" />" /> -->
 					</div>
 	</div>
 	</div>
@@ -100,13 +100,16 @@
 				<div class="container">
 				<div class="row">
 				<div class="col-xs-offset-4 col-md-2">
-				<button class="btn btn-default btnlogin" type="submit">login</button>
+				<!-- <button class="btn btn-default btnlogin" type="submit">login</button> -->
 				</div>
 				</div>
 				
-
+				<img src="<c:url value="/images/bi.jpg" />" />
+				<c:url value="/view/login.jsp" var="btnlogin"/>
+				<a  class="btn btn-default btnlogin" href="${btnlogin}">login</a>
+				
 				<c:url value="/view/showMessage.jsp" var="messageUrl" />
-				<a href="${messageUrl}"></a> <br /> <br />Un petit message
+				<a href="${messageUrl}"></a> <br />voici un petit message   
 			</div>
 </body>
 </html>

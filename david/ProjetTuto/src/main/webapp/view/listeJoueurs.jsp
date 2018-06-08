@@ -12,6 +12,7 @@
 </head>
 <body>
 
+	Table complète<br>
 	<table>
 		<tr><td>ID</td><td>Nom</td></tr>
 	<c:forEach items="${listeJoueurs}" var="joueur">
@@ -21,6 +22,28 @@
          </tr>
      </c:forEach>
      </table>
-        
+     
+     <br><br>
+     
+     <!-- N'affiche la liste des joueurs modifiés que si on est passé sur la page /joueurs/tests -->
+     <c:if test="${listeJoueursChanges.size() > 0}">
+     Liste des joueurs modifiés<br>
+     <table>
+		<tr><td>ID</td><td>Nom</td></tr>
+	<c:forEach items="${listeJoueursChanges}" var="joueur">
+         <tr>
+             <td><c:out value="${joueur.idJoueur}"/></td>
+             <td><c:out value="${joueur.nom}"/></td>
+         </tr>
+     </c:forEach>
+     </table>
+     <br><br>
+     </c:if>
+     
+	<form action="/ProjetTuto/joueurs/tests" method="get">
+		id à effacer : <input type="text" size="2" name="id1" />
+		jusqu'à : <input type="text" size="2" name="id2" />
+		<input type="submit" value="Effacer">
+	</form>
 </body>
 </html>

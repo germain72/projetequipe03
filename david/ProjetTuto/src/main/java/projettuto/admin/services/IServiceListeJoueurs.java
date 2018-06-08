@@ -11,5 +11,10 @@ public interface IServiceListeJoueurs {
 	void ajouterJoueur(Joueur joueur);
 	
 	void suppJoueur(int idJoueur);
+	void suppJoueurs(Integer id1, Integer id2);
+	
+	void modifJoueur(Joueur mJoueur);
+	
+	List<Joueur> changeJoueurs();
 
 }

@@ -26,7 +26,7 @@
 		<img src="<c:url value="/images/bi.jpg" />" />
 		  
 		
-		<c:url value="/joueurs" var="messageUrl" />
+		<c:url value="/joueurs/tests" var="messageUrl" />
 		<a href="${messageUrl}">Voir les noms de mes joueurs</a>
 		<br><br>Un petit message
 		

@@ -30,5 +30,22 @@ public class ServiceListeJoueurs implements IServiceListeJoueurs {
 		dao.suppJoueur(idJoueur);
 	}
 	
+	@Transactional
+	public void suppJoueurs(Integer id1, Integer id2) {
+		dao.suppJoueurs(id1, id2);
+	}
+	
+	@Transactional
+	public void modifJoueur(final Joueur mJoueur) {
+		dao.modifJoueur(mJoueur);
+	}
+	
+	@Transactional
+	public List<Joueur> changeJoueurs() {
+		return dao.changeJoueurs();
+	}
+	
+	
+	
 	
 }

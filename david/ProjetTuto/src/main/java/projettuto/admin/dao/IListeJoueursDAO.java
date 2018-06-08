@@ -11,5 +11,10 @@ public interface IListeJoueursDAO {
 	void ajouterJoueur(final Joueur pJoueur);
 	
 	void suppJoueur(int idJoueur);
+	void suppJoueurs(Integer id1, Integer id2);
+	
+	void modifJoueur(final Joueur mJoueur);
+	
+	List<Joueur> changeJoueurs();
 	
 }
