@@ -57,12 +57,11 @@
   </div>
 </nav>  
  -->
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-4 col-md-2">
-				<!-- <div clas="row-md-8"> -->
-
-				<nav class="navbar navbar-inverse navbar-static-top"
+			
+							<div class="container">
+						<div class="row">
+						<div class="col-xs-4 col-md-4">
+						<nav class="navbar navbar-inverse navbar-static-top"
 					role="navigation">
 					<div class="container">
 						<div class="navbar-header">
@@ -75,34 +74,42 @@
 							</button>
 						</div>
 					</div>
-
-					<!-- Collect the nav links, forms, and other content for toggling -->
+			<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse"
 						id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
 							<li><a href="#">Accueil</a></li>
 							<li><a href="#">Regle</a></li>
 							<li><a href="#">Jeux</a></li>
+							<div class="container">
+		<!---->
 						</ul>
-					</div>
 			</div>
 		</div>
 	</div>
+	<div class="row">
+			<div class="col-xs-8">
+				<!-- <img src="<c:url value="/images/bi.jpg" />" /> -->
+					</div>
 	</div>
 	</div>
 	</div>
 	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-7">
-				<img src="<c:url value="/images/bi.jpg" />" />
-
+				
 				</nav>
-
-				<button class="btn btn-default btnlogin" type="submit">login</button>
-
+				<div class="container">
+				<div class="row">
+				<div class="col-xs-offset-4 col-md-2">
+				<!-- <button class="btn btn-default btnlogin" type="submit">login</button> -->
+				</div>
+				</div>
+				
+				<img src="<c:url value="/images/bi.jpg" />" />
+				<c:url value="/view/login.jsp" var="btnlogin"/>
+				<a  class="btn btn-default btnlogin" href="${btnlogin}">login</a>
+				
 				<c:url value="/view/showMessage.jsp" var="messageUrl" />
-				<a href="${messageUrl}"></a> <br /> <br />Un petit message
+				<a href="${messageUrl}"></a> <br />voici un petit message   
 			</div>
 </body>
 </html>

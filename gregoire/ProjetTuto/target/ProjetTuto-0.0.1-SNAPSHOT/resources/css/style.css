@@ -16,6 +16,8 @@ a {
 	width:85px;
 	height:85px;
 	background-image: linear-gradient(to bottom,#fff 0,#000000 100%);
+	float:right;
+	
 }
 /*
 .navk{
@@ -31,8 +33,9 @@ navbar,
 .navbar-inverse {
   border-radius: 0;
   border: none;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   min-height: 80px;
+  float:left;
 }
 
 .nav li {
@@ -52,4 +55,8 @@ navbar,
   background-color: black;
   transition: 0.7s all linear;
   height: 100%;
+}
+.left1{
+	background-color:black;
+	
 }
