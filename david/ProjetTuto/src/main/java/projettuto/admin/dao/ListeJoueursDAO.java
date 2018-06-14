@@ -61,12 +61,16 @@ public class ListeJoueursDAO implements IListeJoueursDAO {
 	}
 	
 	public void modifJoueur(final Joueur mJoueur) {
-		
 		Query q = entityManager.createQuery("SELECT j FROM Joueur j WHERE j.idJoueur = " + mJoueur.getIdJoueur());
-		/* Me rajoute un id si mon id n'existe pas : objectif : ne pas faire d'ajout si mon id n'existe pas.
-		 * System.out.println(q.getSingleResult());
-		 */
-		entityManager.merge(mJoueur); // J'écrase ce que j'avais à l'id choisi dans mon contrôleur.
+		Joueur j = new Joueur();
+		try {
+			j = (Joueur) q.getSingleResult(); // Renvoie une exception si l'id n'est pas trouvé dans ma table
+			if (mJoueur.getNom().equals(j.getNom())) { System.out.println("Rien n'a changé, le nom est identique"); }
+			else {
+				entityManager.merge(mJoueur); // J'écrase ce que j'avais à l'id choisi dans mon contrôleur. Si l'id n'existe pas il me crée un nouvel id dans ma table, donc pour éviter cela, je lui fais renvoyer une exception avec la ligne ci-dessus.
+				System.out.println("Le nom du joueur à l'id " + mJoueur.getIdJoueur() + " a été modifié.");
+			}
+		} catch (Exception e) { System.out.println("L'id à modifier n'existe pas dans ma table."); }
 	}
 	
 	// Changer des joueurs dans ma liste à partir d'une sélection de noms

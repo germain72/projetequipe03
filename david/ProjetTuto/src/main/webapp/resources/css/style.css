@@ -9,17 +9,43 @@ a {
 	color : yellow;
 }
 
-table {
+table.table1 { /* invisible, qui englobe l'écran */
+	border-style: none;
+}
+
+table.table2 { /* pour mon tableau de joueurs */
 	border-color: yellow;
 	border-style: solid; 
 	border-width: 1px;
 	border-collapse: collapse;
 }
-td { 
+td { /* pour les cases du tableau de joueurs */
 	border-width: 1px;
 	border-left-width: 0px;
 	border-right-width: 0px;
 	border-style: solid; 
 	border-color: yellow;
-	width: 50%;
+	padding: 0px 10px;
  }
+
+td.td1 { /* pour les cases du tableau qui englobe la page */
+	border-style: none;
+	padding: 20px;
+}
+
+
+
+/* Grégoire */
+
+
+.left1{
+    background-color:black;
+
+}
+.couleur_black {
+    color:black;
+}
+
+.fond_noir {
+    background-color:black;
+}
