@@ -1,27 +1,25 @@
-@charset "ISO-8859-1";
+@charset "UTF-8";
 
-body{
+body {
 	box-sizing: border-box;
 	font-family: 'Damion', cursive;
 }
 
-h1{
+h1 {
 	color: red;
 	margin-bottom: 0;
 	font-weight: bold;
 	font-size: 4.33rem;
-}
-
-.souligné{
 	text-decoration: underline;
 }
 
-.container{
+
+.container {
 	margin-top: 50px;
 	margin-bottom: 30px;
 }
 
-.table{
+.table {
 	font-size: 1.67rem;
 }
 
@@ -29,7 +27,7 @@ h1{
 	color: red;
 }
 
-/* Lignes de tableau impairs avec fond rouge et écritures blanches */
+/* Lignes de tableau impairs avec fond rouge et Ã©critures blanches */
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
    background-color: red;
    color: white;
@@ -40,7 +38,7 @@ h1{
    color: red;
 }
 
-.btn-default{
+.btn-default {
 	background-color:red;
 	color:white;
 	box-shadow: inset 0 1px 0 red,0 1px 1px 
@@ -49,16 +47,18 @@ h1{
 	float: right;
 	font-size:1.33rem;
 }
-.container-fluid{
+
+.container-fluid {
 	margin-top: 40px;
 }
 
-form{	
+form {
 	font-size: 1.67rem;
 	color: red;
 }
 
-input{
+input {
+	margin-left: 10px;
 	background-color: red;
 	color: white;
 }

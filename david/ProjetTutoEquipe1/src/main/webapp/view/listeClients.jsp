@@ -1,11 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link
 	href="<c:url value="/resources/bootstrap-3.3.7-dist/css/bootstrap.min.css" />"
@@ -26,7 +26,7 @@
 <title><spring:message code="titre.application" /></title>
 </head>
 <body>
-	<h1 class="text-center text-uppercase souligné">Liste des clients</h1>
+	<h1 class="text-center text-uppercase soulignÃ©">Liste des clients</h1>
 	<div class="container">
 		<table border="1" class="table table-bordered table-striped">
 			<thead>
@@ -60,7 +60,6 @@
 		</table>
 	</div>
 	<c:url value="/afficherCreationListeClients" var="btnretour" />
-	<a class="btn btn-default btnretour" href="${btnretour}">retour
-		formulaire</a>
+	<a class="btn btn-default btnretour" href="${btnretour}">retour formulaire</a>
 </body>
 </html>

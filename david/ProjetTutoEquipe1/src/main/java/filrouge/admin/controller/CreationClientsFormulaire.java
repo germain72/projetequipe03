@@ -9,10 +9,12 @@ import org.hibernate.validator.constraints.NotEmpty;
 public class CreationClientsFormulaire {
 	
 	@NotEmpty
+	@Pattern(regexp="([A-Z])(\\w{1,})")
 	private String nomclient;
 	
 	
 	@NotEmpty
+	@Pattern(regexp="([A-Z])(\\w{1,})")
 	private String prenomclient;
 	
 	
