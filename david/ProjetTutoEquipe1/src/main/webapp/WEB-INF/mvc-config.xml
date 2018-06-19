@@ -12,10 +12,14 @@
          <context:component-scan
             base-package="org.springframework.samples.web"/>  -->
 
+	
     <mvc:resources mapping="/resources/**" location="/resources/" />
+    <mvc:resources mapping="/images/**" location="/resources/images/" />
+    <mvc:resources mapping="/css/**" location="/resources/css/" />
+    <mvc:resources mapping="/film/**" location="/resources/film/" />
     
     <mvc:annotation-driven />
-	<context:component-scan base-package="filrouge, projettuto"/>
+	<context:component-scan base-package="projettuto"/>
     
     <bean   
         class="org.springframework.web.servlet.view.UrlBasedViewResolver">  

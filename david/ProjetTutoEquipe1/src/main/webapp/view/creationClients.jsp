@@ -30,7 +30,9 @@
 </head>
 
 <body>
-	<h1 class="text-center text-uppercase">Formulaire d'inscription</h1>
+	<div class="text-center">
+	<h1 class="text-uppercase">Formulaire d'inscription</h1>
+	</div>
 	<div class="container-fluid">
 		<form:form method="post" modelAttribute="creationClients"
 			action="creerCreationListeClients" class="text-center">

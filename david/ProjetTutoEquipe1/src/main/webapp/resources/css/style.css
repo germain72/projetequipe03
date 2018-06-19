@@ -7,10 +7,12 @@ body {
 
 h1 {
 	color: red;
-	margin-bottom: 0;
+	display : inline-block;
+	border-bottom: 5px solid red;
+	padding-bottom: 1px;
 	font-weight: bold;
 	font-size: 4.33rem;
-	text-decoration: underline;
+	
 }
 
 

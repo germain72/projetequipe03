@@ -28,6 +28,7 @@ public class CreerListeClientsController {
 		}
 		return "creationClients";
 	}
+	
 	@RequestMapping(value="/creerCreationListeClients", method = RequestMethod.POST)
 	public String creer(@Valid @ModelAttribute(value="creationClients") final CreationClientsFormulaire CreationClients, 
 			final BindingResult pBindingResult, final ModelMap pModel) {

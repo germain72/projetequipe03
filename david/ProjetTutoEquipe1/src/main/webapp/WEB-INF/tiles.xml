@@ -4,6 +4,7 @@
 
 <tiles-definitions>
 
+
 	<definition name="listeCourses" template="/view/page.jsp">
 		<put-attribute name="principal" value="/view/listeCourses.jsp" />
 	</definition>
